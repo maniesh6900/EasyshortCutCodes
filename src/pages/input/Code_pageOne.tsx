@@ -25,7 +25,7 @@ const Code = () => {
   <div >
     <pre >
         <code>
-            <textarea value={code} placeholder=""
+            <textarea value={code} placeholder=".."
                 className="w-full "
             />
         </code>

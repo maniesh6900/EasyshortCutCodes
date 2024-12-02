@@ -9,7 +9,7 @@ const PageOne = () => {
 
 
 
-    const [password, setPassword] = useState<string>("")
+    const [password, setPassword] = useState<boolean>()
 
     const handlePassword = ()=>{
         setPassword(!password)
