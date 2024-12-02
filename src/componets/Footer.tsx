@@ -1,6 +1,9 @@
-import { Facebook, Github, Instagram } from 'lucide-react'
+import { Facebook, Github, Instagram, Twitter } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+
 
 const Footer = () => {
+const navigate = useNavigate()
   return (
     <>
         <div className='relative h-screen'>
@@ -8,9 +11,10 @@ const Footer = () => {
                 <div className='flex pl-4 h-full w-1/2'>
                     <p className='text-white'>© 2023 All rights reserved.</p>
                     <div className='text-white w-1/12  ml-14 flex justify-around'>
-                      <Instagram  />
-                      <Facebook />
-                      <Github />
+                      <Instagram  onClick={()=>{navigate("https://www.instagram.com/maniesh_69x/")}} />
+                      <Facebook onClick={()=>{navigate("https://www.facebook.com/manish.ahir8822")}} />
+                      <Github onClick={()=>{navigate("https://github.com/maniesh6900")}}/>
+                      <Twitter onClick={()=>{navigate("https://x.com/Manish99493540")}} />
                     </div>
                 </div>
             </div>

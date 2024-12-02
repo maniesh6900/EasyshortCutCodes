@@ -17,9 +17,9 @@ function App() {
       <Route path="/contact" element={<Contact/>} />
       <Route path="/button" element={<Layout />} />
       <Route path="/login-page" element={<Input />} />
+      <Route path="/doc" element={<Home/>} />
       </Routes>
-    </BrowserRouter>
-      
+    </BrowserRouter>  
     </>
   )
 }
